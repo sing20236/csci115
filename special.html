@@ -1,0 +1,81 @@
+<!-- Name: Alvin Tsoi -->
+<!-- Student No.: 664852571 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speical Pokemon</title>
+    <link rel="stylesheet" type="text/css" href="css/main-1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+		.pokemon {
+			background-color: #f2f2f2;
+			border: 1px solid #ddd;
+			padding: 20px;
+			margin-bottom: 20px;
+			cursor: pointer;
+		}
+
+		.pokemon:hover {
+			background-color: #ddd;
+		}
+	</style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="/img/pokemon.png" alt="logo" width="60" height="60">
+        </a>
+
+        <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gameplay.html">Gameplay</a></li>
+            <li><a href="mainc.html">Main Characters</a></li>
+            <li><a href="special.html">Special Characters</a></li>
+            <li><a href="version.html">Versions</a></li>
+            <li><a href="info.html">information</a></li>
+        </ul>
+	</header> 
+
+    <h1>Pokemon Generation I Special Pokemon</h1>
+	
+	<div class="pokemon" id="pikachu">
+		<h2>Pikachu</h2>
+		<p>Pikachu is the famous electric mouse Pokemon, and one of the most recognizable characters in the Pokemon franchise. It is the signature Pokemon of Ash Ketchum, the main character in the Pokemon anime series.</p>
+	</div>
+	
+	<div class="pokemon" id="mew">
+		<h2>Mew</h2>
+		<p>Mew is a Psychic-type Mythical Pokémon introduced in Generation I.</p>
+	</div>
+	
+	<div class="pokemon" id="mewtwo">
+		<h2>Mewtwo</h2>
+		<p>Mewtwo is a legendary psychic type Pokemon that was created by human scientists using DNA from the legendary Pokemon Mew. It is one of the most powerful Pokemon in the franchise, and has appeared in several Pokemon movies.</p>
+	</div>
+	
+	<script>
+		// Jquery
+		$('.pokemon').click(function() {
+			// Get the ID of the clicked pokemon
+			var id = $(this).attr('id');
+			
+			// Display a message about the pokemon
+			switch(id) {
+				case 'pikachu':
+					alert('Pikachu: The famous electric mouse Pokemon, and one of the most recognizable characters in the Pokemon franchise!');
+					break;
+				case 'mew':
+					alert('Mew: A cutie!');
+					break;
+				case 'mewtwo':
+					alert('Mewtwo: A legendary psychic type Pokemon that was created by human scientists using DNA from the legendary Pokemon Mew!');
+					break;
+			}
+		});
+	</script>
+
+</body>
+</html>
