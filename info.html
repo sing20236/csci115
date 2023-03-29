@@ -9,11 +9,11 @@
     <title>Information</title>
     <link rel="stylesheet" type="text/css" href="css/main-1.css">
     <style type="text/css">
-        #tablecaption{
+        #tablecaption {
             font-size: x-large;
             font-weight: bold;
         }
-        .tablestyle2{
+        .tablestyle2 {
             width: 550px;
             border: 1px solid black;
             border-collapse: collapse;
@@ -22,18 +22,32 @@
             border-style: solid;
             border-color: black;
         }
-        .evenrow{
+        .evenrow {
             background-color: yellow;
         }
-        .cellpadding2{
+        .cellpadding2 {
             padding: 5px 10px 5px 10px;
         }
-        .tabletext2{
+        .tabletext2 {
             text-align: center;
         }
-        .cellwidth{
+        .cellwidth {
             width: 50%;
         }
+        label {
+            font-weight: bold;
+            color: blue;
+        }
+		button {
+			background-color: #00b8f0;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+		}
     </style>
 </head>
 <body>
@@ -49,25 +63,38 @@
             <li><a href="special.html">Special Characters</a></li>
             <li><a href="version.html">Versions</a></li>
             <li><a href="version.html">Generation II</a></li>
-            <li><a href="info.html">information</a></li>
+            <li><a href="info.html">Contact</a></li>
         </ul>
 	</header> 
     
     <h1>Contact Me</h1>
     <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" value="male" checked="checked">Male <br>
+        <input type="radio" name="gender" value="female">Female <br>
+        <input type="radio" name="gender" value="na">Prefer not to say <br><br>
 
-      <label for="subject">Subject:</label>
-      <input type="text" id="subject" name="subject" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea><br>
+        <label for="type">Type:</label>
+        <select name="type">
+            <option value="general" selected="selected"> General Enquiry </option>
+            <option value="complaint" > Complaint </option>
+            <option value="comment"> Comment </option>
+            <option value="others"> Others </option>
+        </select><br><br>
 
-      <button type="submit">Send</button>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Send</button>
     </form>
     
 </body>
