@@ -53,44 +53,22 @@
         </ul>
 	</header> 
     
-    <table border="1" class="tablestyle2 tabletext2">
-        <caption id="tablecaption">Information</caption>
-        <tr>
-            <th class="cellpadding2 cellwidth">HTML</th>
-            <th class="cellpadding2 cellwidth">JavaScript</th>
-        </tr>
-        <tr>
-            <th colspan="2" class="evenrow cellpadding2 cellwidth">Definition</th>
-        </tr>
-        <tr>
-            <td class="cellpadding2 cellwidth">HTML is a markup language developed by Tim Berners-Lee to create web pages.</td>
-            <td class="cellpadding2 cellwidth">JavaScript is a scripting language that is developed 
-                by Brendan Eich to make interactive web pages.</td>
-        </tr>
-        <tr>
-            <th colspan="2" class="evenrow cellpadding2 cellwidth">Content Manipulation</th>
-        </tr> 
-        <tr>
-            <td class="cellpadding2 cellwidth">Content cannot be changed. </td>
-            <td class="cellpadding2 cellwidth">It can change content on user actions.</td>
-        </tr>
-        <tr>
-            <th colspan="2" class="evenrow cellpadding2 cellwidth">Platform</th>
-        </tr> 
-        <tr>
-            <td class="cellpadding2 cellwidth">A web browser is required to display static content. </td>
-            <td class="cellpadding2 cellwidth">It requires a JavaScript engine to run the code.</td>
-        </tr>
-        <tr>
-            <td colspan="2" class="evenrow cellpadding2 cellwidth">JavaScript is embedded in an HTML document. 
-                JavaScript makes the web pages dynamic and interactive. 
-                CSS is for the styling of HTML elements. 
-                HTML is a markup language that gives the primary structure to the web page.
-            </td>
-        </tr>
-    </table>
+    <h1>Contact Me</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
 
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
 
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required><br>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea><br>
+
+      <button type="submit">Send</button>
+    </form>
     
 </body>
 </html>
