@@ -9,31 +9,6 @@
     <title>Information</title>
     <link rel="stylesheet" type="text/css" href="css/main-1.css">
     <style type="text/css">
-        #tablecaption {
-            font-size: x-large;
-            font-weight: bold;
-        }
-        .tablestyle2 {
-            width: 550px;
-            border: 1px solid black;
-            border-collapse: collapse;
-            background-color: white;
-            border-width: auto;
-            border-style: solid;
-            border-color: black;
-        }
-        .evenrow {
-            background-color: yellow;
-        }
-        .cellpadding2 {
-            padding: 5px 10px 5px 10px;
-        }
-        .tabletext2 {
-            text-align: center;
-        }
-        .cellwidth {
-            width: 50%;
-        }
         label {
             font-weight: bold;
             color: blue;
@@ -73,16 +48,18 @@
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
 
-        <label for="gender">Gender:</label><br>
-        <input type="radio" name="gender" value="male" checked="checked">Male <br>
-        <input type="radio" name="gender" value="female">Female <br>
-        <input type="radio" name="gender" value="na">Prefer not to say <br><br>
+        <label for="gender-select">Gender:</label><br>
+        <select id="gender-select" name="gender">
+            <input type="radio" name="gender" value="male" checked="checked">Male <br>
+            <input type="radio" name="gender" value="female">Female <br>
+            <input type="radio" name="gender" value="na">Prefer not to say <br><br>
+        </select>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
 
-        <label for="type">Type:</label>
-        <select name="type">
+        <label for="type-select">Type:</label>
+        <select id="type-select" name="type">
             <option value="general" selected="selected"> General Enquiry </option>
             <option value="complaint" > Complaint </option>
             <option value="comment"> Comment </option>
